@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,7 @@ import py.edu.ucsa.rest.api.core.model.TiposExped;
 import py.edu.ucsa.rest.api.core.services.TiposExpendService;
 import py.edu.ucsa.rest.api.web.dto.ErrorDTO;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/tipoExped")
 public class TiposExpedController {
